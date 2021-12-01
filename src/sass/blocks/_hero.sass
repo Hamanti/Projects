@@ -1,0 +1,66 @@
+.hero
+  padding: 50px 0
+  background-color: #f5f5f5
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-basis: 50%
+    &__left
+      width: 50%
+    &__title-text
+      font-size: 36px
+      margin-bottom: 60px
+    &__subtitle-text
+      margin-bottom: 70px
+    &__list
+      list-style-type: none
+      margin: 0
+      padding: 0
+      &-li
+        margin-top: 20px
+        display: flex
+        align-items: center
+      &-text
+        width: 300px
+      &-images
+        margin-right: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        border: 1px solid $main-color
+      
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+      &__left
+        width: 100%
+      &__title-text
+        font-size: 36px
+        margin-bottom: 20px
+      &__subtitle-text
+        margin-bottom: 33px
+      &__list  
+        margin-bottom: 40px
+        width: 100%
+        
+@media (max-width: 768px)
+  .hero
+    &-block
+      &__left
+      &__title-text
+        font-size: 24px
+      &__subtitle-text
+        margin-bottom: 16px
+      &__list  
+        margin-bottom: 40px
+        width: 100%
+        &-text
+          font-size: 12px
+          width: 200px
+        &-images
+          margin-right: 20px
+  
