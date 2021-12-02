@@ -58,6 +58,27 @@ body {
   border: none;
 }
 
+.section__title {
+  font-size: 28px;
+}
+
+.section__subtitle {
+  font-size: 16px;
+}
+
+.section__padding {
+  padding: 90px 0;
+}
+
+.section__input {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
+.section__bold-text {
+  font-weight: bold;
+}
+
 /** Подключение навигации **/
 .navbar {
   padding: 8px 0;
@@ -233,6 +254,94 @@ body {
   }
   .hero-block__list-images {
     margin-right: 20px;
+  }
+}
+
+/** Подключение offer блока **/
+.offer {
+  background-image: url(../img/offer/offer-img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+}
+
+.offer-block {
+  width: 50%;
+  position: relative;
+}
+
+.offer-block__title {
+  max-width: 400px;
+  margin-bottom: 35px;
+}
+
+.offer-block__subtitle {
+  width: 300px;
+  margin-bottom: 35px;
+}
+
+.offer-block__input-button {
+  width: 100%;
+}
+
+.offer-block__input-flex {
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.offer-block__input {
+  padding: 20px 28px;
+  min-width: 48%;
+}
+
+.offer-block__button {
+  width: 90%;
+  min-width: 70%;
+  padding: 20px 0;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.offer-block__add-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-block__time-call {
+  width: 230px;
+  font-size: 15px;
+}
+
+.offer-block__or-call {
+  width: 200px;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .offer-block__input {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
