@@ -20,7 +20,7 @@
             <span class="navbar__location">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__number">+7 (495) 42-251-31</a>
           </div>
-          <button class="button navbar__button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button__call">Перезвоните мне</button>
         </div>
         <!-- /.navbar__contacts -->
       </div>
@@ -76,12 +76,20 @@
           <button class="button offer-block__button">Получить бесплатный дизайн-проект</button>
         </div>
         <div class="offer-block__add-info">
-          <div class="offer-block__time-call">Наш менеджер перезвонит Вам в течении 60 секунд</div>
-          <div class="offer-block__or-call">или перезвоните нам сами <span class="section__bold-text">+7 (495) 42-251-31</span></div>
+          <div class="offer-block__time-call">Наш менеджер перезвонит Вам<br>в течении 60 секунд</div>
+          <div class="offer-block__or-call">или перезвоните нам сами<br><span class="section__bold-text">+7 (495) 42-251-31</span></div>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__button-close" id="button__close">&times;</button>
+      <h1 class="modal-dialog__text">Модальное Окно</h1>
+    </div>
+  </div>
 </body>
+
+  <script src="js/main.js"></script>
 </html>

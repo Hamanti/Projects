@@ -39,6 +39,7 @@
       margin-bottom: 35px
     &__add-info
       display: flex
+      width: 90%
       justify-content: space-between
     &__time-call
       width: 230px
@@ -52,4 +53,34 @@
     &-block
       &__input
         width: 100%
+      &__or-call
+        width: 215px
+        font-size: 13px
+      &__time-call
+        font-size: 13px
+      &__input:last-child
+        margin-top: 20px
 
+@media (max-width: 768px)
+  .offer
+    background-image: none
+    &-block
+      width: 100%
+      &__title
+        font-size: 18px
+      &__subtitle
+        font-size: 14px
+      &__button
+        width: 100%
+      &__add-info
+        width: 100%
+      &__input-flex
+        max-width: 100%
+      &__add-info
+        flex-direction: column
+      &__time-call
+        margin-top: 30px
+        font-size: 15px
+      &__or-call
+        margin-top: 20px
+        font-size: 15px

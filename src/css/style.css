@@ -48,7 +48,8 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 95%;
+    width: 90%;
+    mg: 0 5%;
   }
 }
 
@@ -77,6 +78,12 @@ body {
 
 .section__bold-text {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .section__padding {
+    padding: 60px 0;
+  }
 }
 
 /** Подключение навигации **/
@@ -324,6 +331,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -343,5 +351,93 @@ body {
   .offer-block__input {
     width: 100%;
   }
+  .offer-block__or-call {
+    width: 215px;
+    font-size: 13px;
+  }
+  .offer-block__time-call {
+    font-size: 13px;
+  }
+  .offer-block__input:last-child {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background-image: none;
+  }
+  .offer-block {
+    width: 100%;
+  }
+  .offer-block__title {
+    font-size: 18px;
+  }
+  .offer-block__subtitle {
+    font-size: 14px;
+  }
+  .offer-block__button {
+    width: 100%;
+  }
+  .offer-block__add-info {
+    width: 100%;
+  }
+  .offer-block__input-flex {
+    max-width: 100%;
+  }
+  .offer-block__add-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer-block__time-call {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .offer-block__or-call {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+/** Подключение offer блока **/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.modal-dialog__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  background-color: white;
+  font-weight: +bold;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */
