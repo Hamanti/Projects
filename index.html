@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlatCaluge</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
   
@@ -83,6 +84,7 @@
     </div>
   </section>
 
+  <!-- Модальное окно -->
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__button-close" id="button__close">&times;</button>
@@ -90,12 +92,34 @@
     </div>
   </div>
 
+  <!-- Кнопка которая отматывает в самый верх -->
   <div class="uparrow">
     <h1 class="uparrow__text" id="uparrow">↑</h1>
   </div>
 
+  <section class="section portfolio">
+    <div class="container">
+      <h2 class="section__title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
+      
+      <div class="slider">
+        <div class="slider__item"><img src="img/slider/slider-img1.png" alt="картинка слайдера"></div>
+        <div class="slider__item"><img src="img/slider/slider-img2.png" alt="картинка слайдера"></div>
+        <div class="slider__item"><img src="img/slider/slider-img3.png" alt="картинка слайдера"></div>
+        <div class="slider__item"><img src="img/slider/slider-img1.png" alt="картинка слайдера"></div>
+        <div class="slider__item"><img src="img/slider/slider-img2.png" alt="картинка слайдера"></div>
+        <div class="slider__item"><img src="img/slider/slider-img3.png" alt="картинка слайдера"></div>
+      </div>
+    </div>
+    <div class="arrows">
+      <div class="arrows__button" id="prevArrow"><img src="img/slider/right-arrow.png"></div>
+      <div class="arrows__button" id="nextArrow"><img src="img/slider/left-arrow.png"></div>
+    </div>
+  </section>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/jquery.maskedinput.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
