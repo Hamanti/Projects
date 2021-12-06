@@ -68,13 +68,13 @@
       <div class="offer-block section__padding">
         <h1 class="section__title offer-block__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h1>
         <h3 class="section__subtitle offer-block__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</h3>
-        <div class="offer-block__input-button">
+        <form id="offer-form" class="offer-block__input-button">
           <div class="offer-block__input-flex">
-            <input type="text" class="section__input offer-block__input" placeholder="Ваше имя">
-            <input type="text" class="section__input offer-block__input" placeholder="Ваш телефон">
+            <input type="text" name="username" class="section__input offer-block__input" placeholder="Ваше имя">
+            <input type="tel" name="userphone" id="phoneinput" class="section__input offer-block__input" placeholder="Ваш телефон">
           </div>
           <button class="button offer-block__button">Получить бесплатный дизайн-проект</button>
-        </div>
+        </form>
         <div class="offer-block__add-info">
           <div class="offer-block__time-call">Наш менеджер перезвонит Вам<br>в течении 60 секунд</div>
           <div class="offer-block__or-call">или перезвоните нам сами<br><span class="section__bold-text">+7 (495) 42-251-31</span></div>
@@ -86,10 +86,16 @@
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__button-close" id="button__close">&times;</button>
-      <h1 class="modal-dialog__text">Модальное Окно</h1>
+      <h3 class="modal-dialog__text" id='modaltext'>Ваша заявка отправлена!</h3>
     </div>
   </div>
-</body>
 
-  <script src="js/main.js"></script>
+  <div class="uparrow">
+    <h1 class="uparrow__text" id="uparrow">↑</h1>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/modal.js"></script>
+</body>
 </html>

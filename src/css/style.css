@@ -440,4 +440,19 @@ body {
   border-radius: 10px;
   border: 1px solid black;
 }
+
+/** Подключение uparrow кнопки **/
+.uparrow__text {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+}
+
+.uparrow__text:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
