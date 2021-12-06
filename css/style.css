@@ -504,7 +504,6 @@ body {
 /** Подключение price блока **/
 .price__title {
   max-width: 500px;
-  font-size: 18px;
   margin: 100px auto 60px;
 }
 
@@ -526,6 +525,7 @@ body {
           flex-direction: column;
   text-align: center;
   width: 30%;
+  min-width: 319px;
   margin: 15px;
   border: 1px solid #dddddd;
   -webkit-transition: 0.2s;
@@ -602,5 +602,13 @@ body {
   z-index: -1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
