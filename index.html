@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlatCaluge</title>
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slick.css">
+
 </head>
 <body>
   
@@ -14,9 +16,9 @@
     <div class="container">
       <div class="navbar__flex">
         <div>
-          <img src="img/logo.png" class="navbar__logo">
+          <img src="img/logo.png" class="navbar__logo animate__animated animate__fadeInLeft">
         </div>
-        <div class="navbar__info">
+        <div class="navbar__info animate__animated animate__fadeInRight">
           <div class="navbar__contacts">
             <span class="navbar__location">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__number">+7 (495) 42-251-31</a>
@@ -35,25 +37,25 @@
     <div class="container">
       <div class="hero-block">
         <div class="hero-block__left">
-          <h1 class="hero-block__title-text">Внутренняя отделка помещений "под ключ"</h1>
-          <h3 class="hero-block__subtitle-text">с гарантией качества, прописанной в договоре</h3>
+          <h1 data-wow-delay="0.2s" class="hero-block__title-text wow animate__animated animate__fadeInLeft">Внутренняя отделка помещений "под ключ"</h1>
+          <h3 data-wow-delay="0.4s" class="hero-block__subtitle-text wow animate__animated animate__fadeInLeft">с гарантией качества, прописанной в договоре</h3>
           <ul class="hero-block__list">
-            <li class="hero-block__list-li">
+            <li data-wow-delay="0.6s" class="hero-block__list-li wow animate__animated animate__fadeInLeft">
               <div class="hero-block__list-images"><img src="img/hero/clock.png" alt="clock"></div>
               <span class="hero-block__list-text">Точно соблюдаем строки</span>
             </li>
-            <li class="hero-block__list-li">
+            <li data-wow-delay="0.8s" class="hero-block__list-li wow animate__animated animate__fadeInLeft">
               <div class="hero-block__list-images"><img src="img/hero/calculator.png" alt="calculator"></div>
               <span class="hero-block__list-text">Рассчитаем смету на работыи материалы в день обращения</span>
             </li>
-            <li class="hero-block__list-li">
+            <li data-wow-delay="1s" class="hero-block__list-li wow animate__animated animate__fadeInLeft">
               <div class="hero-block__list-images"><img src="img/hero/paint.png" alt="paint"></div>
               <span class="hero-block__list-text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
             </li>
           </ul>
         </div>
         <!-- /.hero-block__left -->
-        <div class="hero-block__right">
+        <div class="hero-block__right animate__animated animate__fadeInRight">
           <img src="img/hero//heroimg.png" class="hero-block__hero-img" alt="план квартиры">
         </div>
         <!-- /.hero-block__right -->
@@ -122,27 +124,27 @@
         </h2>
       <h3 class="section__subtitle price__subtitle">Прайс на наши услуги</h3>
       <div class="cards price__cards">
-        <div class="card">
+        <div data-wow-delay="0.2s" class="card wow animate__animated animate__fadeInTopLeft">
           <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
           <span class="card__name">Ремонт ванных комнат и с/у</span>
           <a href="#" class="card__link">Узнать цены</a></div>
-        <div class="card">
+        <div data-wow-delay="0.4s" class="card wow animate__animated animate__fadeInTopLeft">
           <div class="card__image"><img src="img/price/flat.png" alt=""></div>
           <span class="card__name">Ремонт комнат и квартир</span>
           <a href="#" class="card__link">Узнать цены</a></div>
-        <div class="card">
+        <div data-wow-delay="0.6s" class="card wow animate__animated animate__fadeInTopLeft">
           <div class="card__image"><img src="img/price/office.png" alt=""></div>
           <span class="card__name">Отделка офисных помещений</span>
           <a href="#" class="card__link">Узнать цены</a></div>
-        <div class="card">
+        <div data-wow-delay="0.8s" class="card wow animate__animated animate__fadeInTopLeft">
           <div class="card__image"><img src="img/price/newbuild.png" alt=""></div>
           <span class="card__name">Ремонт в новостройках</span>
           <a href="#" class="card__link">Узнать цены</a></div>
-        <div class="card">
+        <div data-wow-delay="1s" class="card wow animate__animated animate__fadeInTopLeft">
           <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
           <span class="card__name">Ремонт кухонь</span>
           <a href="#" class="card__link">Узнать цены</a></div>
-        <div class="card">
+        <div data-wow-delay="1.2s" class="card wow animate__animated animate__fadeInTopLeft">
           <div class="card__image"><img src="img/price/houses.png" alt=""></div>
           <span class="card__name">Ремонт дач и коттеджей</span>
           <a href="#" class="card__link">Узнать цены</a></div>
@@ -156,5 +158,9 @@
   <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
