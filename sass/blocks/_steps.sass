@@ -1,0 +1,78 @@
+.bref
+  &-block
+    padding: 150px 0 0
+    &__title
+      font-size: 30px
+      +bold
+      max-width: 650px
+      margin: auto
+      margin-bottom: 60px
+    &__subtitle
+      display: block
+      font-size: 20px
+      margin: 0 auto
+      max-width: 200px
+      margin-bottom: 60px
+      text-align: center
+
+.step
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  flex-basis: 20%
+  &:after
+    content: ''
+    width: 72px
+    height: 25px
+    background-image: url('../img/steps/uparrow.png')
+    position: absolute
+    top: -10px
+    left: 180px
+  &:last-child
+    &:after
+      display: none
+  &__image
+    width: 100px
+    height: 100px
+    border: 2px solid $main-color
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+  &s
+    display: flex
+    flex-wrap: wrap
+    text-align: center
+    justify-content: space-between
+  &__subtitle
+    width: 90%
+    max-width: 170px
+    font-size: 14px
+
+@media (max-width: 1200px)
+  .step
+    flex-basis: 50%
+    &s
+      justify-content: center
+    &:after
+      display: none
+
+@media (max-width: 768px)
+  .step
+    flex-basis: 50%
+    margin-bottom: 30px
+    &s
+      flex-direction: column
+      justify-content: center
+    &:after
+      display: none
+  .bref
+    &-block
+      padding: 70px 0 0
+      &__title
+        font-size: 24px
+        margin-bottom: 30px
+      &__subtitle
+        font-size: 18px
+        margin-bottom: 30px
