@@ -288,7 +288,7 @@
             </li>
             <li class="repair-list__item">
               <div class="repair-list__count">3</div>
-              <span class="repair-list__text">  Где находится помещение, в котором будет производиться ремонт?</span>
+              <span class="repair-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
             </li>
             <li class="repair-list__item">
               <div class="repair-list__count">4</div>
@@ -303,10 +303,10 @@
           </h3>
           <p class="section__subtitle repair-block__subtitle center">Для этого заполните форму ниже
           </p>
-          <form class="repair-form">
+          <form class="repair-form" id="repair-form">
             <input type="text" name="username" class="section__input repair-form__input" placeholder="Ваше имя">
-            <input type="tel" name="userphone" class="section__input repair-form__input" placeholder="Ваш телефон">
-            <button class="button repair-form__button">Рассчитать стоиость</button>
+            <input type="tel" name="userphone" class="section__input repair-form__input" id="phoneinput2" placeholder="Ваш телефон">
+            <button class="button repair-form__button" id="button__cost">Рассчитать стоиость</button>
           </form>
           <p class="section__subtitle repair-block__subtite center">Мы перезвоним Вам в течение 60 секунд
           </p>
@@ -336,10 +336,12 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/jquery.maskedinput.js"></script>
-  <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+
+  <script src="js/modal.js"></script>
   <script>
     new WOW().init();
   </script>
