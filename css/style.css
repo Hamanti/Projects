@@ -919,7 +919,7 @@ body {
 .repair {
   background-image: url("../img/repair/color-fone.jpg"), url("../img/repair/repair-fone.png");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
 }
 
@@ -1072,6 +1072,86 @@ body {
     font-size: 15px;
     max-width: 80%;
     padding-left: 10px;
+  }
+}
+
+/** Подключение footer **/
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contacts-block {
+  padding: 100px 0 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__title {
+  max-width: 500px;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.contacts__image {
+  width: 30px;
+  height: 30px;
+}
+
+.contacts__text {
+  margin-left: 25px;
+  margin-bottom: 40px;
+  max-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .map {
+    width: 100%;
+    top: 500px;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts-block {
+    padding: 60px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts__title {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

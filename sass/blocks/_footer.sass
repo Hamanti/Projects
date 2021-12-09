@@ -1,0 +1,45 @@
+.footer
+  position: relative
+  
+.map
+  width: 50%
+  position: absolute
+  top: 0
+  left: 0
+
+.contacts
+  flex-basis: 50%
+  &-block
+    padding: 100px 0 0 200px
+    display: flex
+    justify-content: flex-end
+  &__title
+    max-width: 500px
+    font-size: 22px
+    text-align: left
+    margin-bottom: 100px
+  &__list
+    list-style: none
+    padding: 0
+  &__item
+    display: flex
+    align-items: start
+  &__image
+    width: 30px
+    height: 30px
+  &__text
+    margin-left: 25px
+    margin-bottom: 40px
+    max-width: 150px
+
+@media (max-width: 768px)
+  .map
+    width: 100%
+    top: 500px
+  .contacts
+    flex-basis: 100%
+    &-block
+      padding: 60px 0
+      flex-direction: column
+    &__title
+      margin-bottom: 40px
