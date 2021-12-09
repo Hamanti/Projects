@@ -54,3 +54,45 @@
       margin-top: 15px
       margin-bottom: 30px
       +bold
+
+@media (max-width: 1200px)
+  .repair
+    &-block
+      &__title
+        margin-bottom: 25px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 35px
+      &__half-right
+        padding-right: 15px
+      &__half-left
+        padding-left: 100px
+    &-list
+      &__text
+        font-size: 15px
+        max-width: 300px
+
+@media (max-width: 768px)
+  .repair
+    background-image: url('../img/repair/color-fone.jpg'), url('../img/repair/repair-fone.png')
+    background-position: top center, center bottom
+    background-size: 100% 512px, contain
+    background-repeat: repeat-x, no-repeat
+    &-block
+      flex-direction: column
+      padding: 70px 0 10px
+      &__title
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 35px
+      &__half-right
+        padding-right: 0
+      &__half-left
+        margin-top: 50px
+        padding: 0
+    &-list
+      &__text
+        font-size: 15px
+        max-width: 80%
+        padding-left: 10px

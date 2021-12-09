@@ -823,6 +823,10 @@ body {
 }
 
 /** Подключение warranty блока **/
+.warranty-block {
+  padding-bottom: 100px;
+}
+
 .warranty-block__title {
   font-size: 30px;
   max-width: 638px;
@@ -836,6 +840,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .warranty-docs__doc {
@@ -866,6 +872,47 @@ body {
 .warranty-docs__doc {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+@media (max-width: 1200px) {
+  .warranty-docs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .warranty-docs__doc {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .warranty {
+    padding-bottom: 60px;
+  }
+  .warranty__title {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .warranty-docs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .warranty-docs__doc {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .warranty-docs__subtitle {
+    margin-top: 20px;
+    max-width: 300px;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
 }
 
 /** Подключение repair блока **/
@@ -971,5 +1018,60 @@ body {
   margin-bottom: 30px;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .repair-block__title {
+    margin-bottom: 25px;
+  }
+  .repair-block__subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .repair-block__half-right {
+    padding-right: 15px;
+  }
+  .repair-block__half-left {
+    padding-left: 100px;
+  }
+  .repair-list__text {
+    font-size: 15px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .repair {
+    background-image: url("../img/repair/color-fone.jpg"), url("../img/repair/repair-fone.png");
+    background-position: top center, center bottom;
+    background-size: 100% 512px, contain;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .repair-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 0 10px;
+  }
+  .repair-block__title {
+    margin-bottom: 15px;
+  }
+  .repair-block__subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .repair-block__half-right {
+    padding-right: 0;
+  }
+  .repair-block__half-left {
+    margin-top: 50px;
+    padding: 0;
+  }
+  .repair-list__text {
+    font-size: 15px;
+    max-width: 80%;
+    padding-left: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
