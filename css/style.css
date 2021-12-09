@@ -81,6 +81,28 @@ body {
   font-weight: bold;
 }
 
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.slogan-pos {
+  margin: 70px 0;
+}
+
+.slogan-block {
+  width: 100%;
+  background-color: #ffd200;
+}
+
+.slogan-block__title {
+  font-size: 28px;
+  padding: 90px 0;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .section__padding {
     padding: 60px 0;
@@ -743,5 +765,211 @@ body {
     font-size: 18px;
     margin-bottom: 30px;
   }
+}
+
+/** Подключение about блока **/
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-block__card {
+  position: relative;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.about-block__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .about-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-block__card {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-block__card {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+/** Подключение warranty блока **/
+.warranty-block__title {
+  font-size: 30px;
+  max-width: 638px;
+  margin: 120px auto 100px;
+}
+
+.warranty-docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.warranty-docs__doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warranty-docs__image {
+  max-width: 208px;
+  max-height: 297px;
+}
+
+.warranty-docs__subtitle {
+  margin-top: 40px;
+  font-size: 18px;
+  max-width: 270px;
+  text-align: center;
+}
+
+.warranty-docs__doc {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+/** Подключение repair блока **/
+.repair {
+  background-image: url("../img/repair/color-fone.jpg"), url("../img/repair/repair-fone.png");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.repair-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px 0;
+}
+
+.repair-block__half-right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 70px;
+  text-align: left;
+}
+
+.repair-block__half-left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+}
+
+.repair-block__title {
+  margin-bottom: 50px;
+  font-size: 20px;
+  max-width: 530px;
+}
+
+.repair-block__subtitle {
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+.repair-list {
+  list-style: none;
+  padding: 0;
+}
+
+.repair-list__item {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.repair-list__count {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.repair-list__text {
+  max-width: 400px;
+  padding-left: 30px;
+}
+
+.repair-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.repair-form__input {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.repair-form__button {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

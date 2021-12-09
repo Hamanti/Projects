@@ -1,0 +1,31 @@
+.about
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__card
+      position: relative
+      flex-basis: 32%
+    &__title
+      position: absolute
+      top: 0
+      left: 0
+      padding: 30px
+      margin: 0
+
+@media (max-width: 1200px)
+  .about
+    &-block
+      justify-content: center
+      &__card
+        flex-basis: 50%
+        margin-bottom: 10px
+
+@media (max-width: 768px)
+  .about
+    &-block
+      justify-content: center
+      flex-direction: column
+      &__card
+        margin: 0 auto
+        margin-bottom: 20px

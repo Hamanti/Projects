@@ -1,0 +1,56 @@
+.repair
+  background-image: url('../img/repair/color-fone.jpg'), url('../img/repair/repair-fone.png')
+  background-position: left center, center right
+  background-size: 50%, contain
+  background-repeat: repeat-y, no-repeat
+  &-block
+    display: flex
+    padding: 90px 0
+    &__half-right
+      flex-basis: 50%
+      padding-right: 70px
+      text-align: left
+    &__half-left
+      flex-basis: 50%
+      padding-left: 200px
+    &__title
+      margin-bottom: 50px
+      font-size: 20px   
+      max-width: 530px
+    &__subtitle
+      font-size: 16px
+      margin-bottom: 80px
+  &-list
+    list-style: none
+    padding: 0
+    &__item
+      margin-bottom: 30px
+      display: flex
+      align-items: center
+      +bold
+    &__count
+      +bold
+      border: 1px solid black
+      width: 35px
+      height: 35px
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+    &__text
+      max-width: 400px
+      padding-left: 30px
+  &-form
+    display: flex
+    flex-direction: column
+    margin-top: 50px
+    &__input
+      padding: 20px
+      margin-bottom: 15px
+    &__button
+      display: block
+      padding: 20px
+      border-radius: 10px
+      margin-top: 15px
+      margin-bottom: 30px
+      +bold
