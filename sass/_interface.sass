@@ -28,6 +28,9 @@ body
   background-color: $main-color
   outline: none
   border: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
 
 .section
   &__title
@@ -59,6 +62,12 @@ body
       max-width: 1000px
       text-align: center
       margin: 0 auto
+
+input.error
+  border: 1px solid red
+label.error
+  margin-top: -10px
+  margin-bottom: 10px
 
 @media (max-width: 768px)
   .section

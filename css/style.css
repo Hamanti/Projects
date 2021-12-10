@@ -59,6 +59,11 @@ body {
   border: none;
 }
 
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
 .section__title {
   font-size: 28px;
   text-align: center;
@@ -101,6 +106,15 @@ body {
   max-width: 1000px;
   text-align: center;
   margin: 0 auto;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+label.error {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1080,6 +1094,19 @@ body {
   position: relative;
 }
 
+.footer:before {
+  content: '';
+  height: 640px;
+  width: 100%;
+  background-color: white;
+  top: 500px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  opacity: 5%;
+  display: none;
+}
+
 .map {
   width: 50%;
   position: absolute;
@@ -1135,6 +1162,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    position: relative;
+  }
+  .footer:before {
+    display: block;
+  }
   .map {
     width: 100%;
     top: 500px;
@@ -1152,6 +1185,9 @@ body {
   }
   .contacts__title {
     margin-bottom: 40px;
+  }
+  .contacts__text {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
